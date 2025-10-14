@@ -1,0 +1,10 @@
+document.getElementById("mostrarMais").addEventListener("click", function () {
+  const extraNoticia = document.querySelector(".noticia.extra");
+  if (extraNoticia.style.display === "none") {
+    extraNoticia.style.display = "block";
+    this.textContent = "Mostrar menos notícias";
+  } else {
+    extraNoticia.style.display = "none";
+    this.textContent = "Mostrar mais notícias";
+  }
+});
