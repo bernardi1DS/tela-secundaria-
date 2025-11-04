@@ -1,53 +1,64 @@
 body {
   font-family: Arial, sans-serif;
+  background: #004999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  background: #f0f0f0;
 }
 
-header {
-  background-color: #004080;
-  color: white;
-  padding: 20px;
+.login-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-container h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #004999;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-main {
-  padding: 20px;
-}
-
-.noticia {
-  background: white;
+input {
+  width: 100%;
+  padding: 10px;
   margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #004999;
+  border-radius: 4px;
 }
 
 button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #004080;
+  width: 100%;
+  padding: 10px;
+  background: #004999;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #003366;
+  background: #003366;
 }
 
-footer {
-  background: #222;
-  color: white;
+.error-message {
+  color: red;
   text-align: center;
-  padding: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.error-message {
+  display: none; /* esconde a mensagem até que seja necessária */
 }
